@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <RelativeLayout
+        android:id="@+id/layout_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:background="?attr/colorPrimary"
+        android:paddingBottom="20dp"
+        android:paddingLeft="@dimen/vertical_margin"
+        android:paddingRight="@dimen/vertical_margin"
+        android:paddingTop="10dp">
+
+        <ImageButton
+            android:id="@+id/button_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_search_white_36dp" />
+
+        <EditText
+            android:id="@+id/edit_text_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/button_search"
+            android:paddingTop="20dp"
+            android:hint="@string/hint_username"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:theme="@style/LightEditText"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/search_user_list"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_search"
+        tools:listitem="@layout/item_user"
+        />
+
+    <include
+        layout="@layout/view_progressbar"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Github Browser</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_public_repos">Repos</string>
+    <string name="text_hireable">Hireable</string>
+    <string name="text_not_hireable">Not Hireable</string>
+    <string name="hint_username">Github Username</string>
+    <string name="title_activity_user_details">UserDetailsActivity</string>
+</resources>
