@@ -1,4 +1,4 @@
-package com.hugo.mvpsampleapplication.view.fragment;
+package com.hugo.mvpsampleapplication.features.searchuser;
 
 import android.content.Context;
 

@@ -1,4 +1,4 @@
-package com.hugo.mvpsampleapplication.presenter;
+package com.hugo.mvpsampleapplication.features;
 
 public interface Presenter<V> {
 
@@ -6,5 +6,5 @@ public interface Presenter<V> {
 
     void detachView();
 
-    void destroy();
+    void destroy(boolean unsubscribe);
 }

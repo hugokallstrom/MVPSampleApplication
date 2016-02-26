@@ -1,4 +1,4 @@
-package com.hugo.mvpsampleapplication.model.network;
+package com.hugo.mvpsampleapplication.features;
 
 /**
  * Created by hugo on 1/29/16.

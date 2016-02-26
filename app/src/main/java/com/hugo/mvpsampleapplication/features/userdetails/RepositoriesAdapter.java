@@ -1,4 +1,4 @@
-package com.hugo.mvpsampleapplication.view.adapter;
+package com.hugo.mvpsampleapplication.features.userdetails;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -15,11 +15,11 @@ import java.util.List;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
-public class ReposetoriesAdapter extends RecyclerView.Adapter<ReposetoriesAdapter.RepoViewHolder> {
+public class RepositoriesAdapter extends RecyclerView.Adapter<RepositoriesAdapter.RepoViewHolder> {
 
     private List<Repository> reposetories;
 
-    public ReposetoriesAdapter() {
+    public RepositoriesAdapter() {
         this.reposetories = Collections.emptyList();
     }
 

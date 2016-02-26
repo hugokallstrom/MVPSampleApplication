@@ -1,4 +1,4 @@
-package com.hugo.mvpsampleapplication.view.fragment;
+package com.hugo.mvpsampleapplication.features.userdetails;
 
 import android.content.Context;
 

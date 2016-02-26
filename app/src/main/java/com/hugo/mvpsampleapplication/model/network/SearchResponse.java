@@ -17,9 +17,13 @@ public class SearchResponse {
     @SerializedName("items")
     private List<User> users = new ArrayList<User>();
 
-    private SearchResponse() {}
+    public SearchResponse() {}
 
     public List<User> getUsers() {
         return users;
+    }
+
+    public void setUsers(ArrayList<User> users) {
+        this.users = users;
     }
 }
