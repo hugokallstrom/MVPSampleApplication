@@ -5,7 +5,6 @@ import com.hugo.mvpsampleapplication.model.network.GitHubService;
 import com.hugo.mvpsampleapplication.model.network.SearchResponse;
 import com.hugo.mvpsampleapplication.utils.PostExecutionThread;
 import com.hugo.mvpsampleapplication.utils.ThreadExecutor;
-import junit.framework.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;

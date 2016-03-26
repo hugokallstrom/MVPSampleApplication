@@ -1,7 +1,6 @@
 package com.hugo.mvpsampleapplication.app;
 
 import com.hugo.mvpsampleapplication.utils.dependencyinjection.components.ApplicationComponent;
-import junit.framework.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;
@@ -16,21 +15,21 @@ public class MVPApplicationTest {
 
   @Mock
   private ApplicationComponent applicationComponent;
-  private MVPApplication mvvmApplication;
+  private MVPApplication mvpApplication;
 
   @Before
   public void setUp() {
     MockitoAnnotations.initMocks(this);
-    mvvmApplication = new MVPApplication();
+    mvpApplication = new MVPApplication();
   }
 
   @Test
   public void testSetAndGetApplicationComponent() throws Exception {
-    ApplicationComponent nullApplicationComponent = mvvmApplication.getApplicationComponent();
+    ApplicationComponent nullApplicationComponent = mvpApplication.getApplicationComponent();
     assertNull(nullApplicationComponent);
 
-    mvvmApplication.setApplicationComponent(applicationComponent);
-    applicationComponent = mvvmApplication.getApplicationComponent();
+    mvpApplication.setApplicationComponent(applicationComponent);
+    applicationComponent = mvpApplication.getApplicationComponent();
     assertNotNull(applicationComponent);
   }
 

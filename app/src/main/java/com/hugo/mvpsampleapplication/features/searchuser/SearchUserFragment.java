@@ -179,13 +179,13 @@ public class SearchUserFragment extends Fragment implements SearchUserView {
     super.onDetach();
     activityListener = null;
     layoutManager = null;
+    ButterKnife.unbind(this);
+    searchUserPresenter.destroy(false);
   }
 
   @Override
   public void onDestroyView() {
     super.onDestroyView();
-    ButterKnife.unbind(this);
-    searchUserPresenter.destroy(false);
   }
 
   @Override

@@ -1,12 +1,10 @@
 package com.hugo.mvpsampleapplication.features.searchuser;
 
 import com.hugo.mvpsampleapplication.MockFactory;
-import com.hugo.mvpsampleapplication.model.entities.User;
 import com.hugo.mvpsampleapplication.model.network.GitHubService;
 import com.hugo.mvpsampleapplication.model.network.SearchResponse;
 import com.hugo.mvpsampleapplication.utils.PostExecutionThread;
 import com.hugo.mvpsampleapplication.utils.ThreadExecutor;
-import java.util.List;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

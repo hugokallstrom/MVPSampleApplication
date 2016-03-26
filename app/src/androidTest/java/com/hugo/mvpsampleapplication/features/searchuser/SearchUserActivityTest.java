@@ -87,14 +87,14 @@ public class SearchUserActivityTest {
   }
 
   @Test
-  public void shouldDisplayNetworkErrorInSnackBar() throws Exception {
+  public void networkErrorShouldDisplayInSnackBar() throws Exception {
     performSearch(MockFactory.TEST_USERNAME_ERROR);
     onView(withId(android.support.design.R.id.snackbar_text)).check(
         matches(withText("Error loading users")));
   }
 
   @Test
-  public void shouldDisplayNoUserErrorInSnackBar() throws Exception {
+  public void noUserErrorShouldDisplayInSnackBar() throws Exception {
     performSearch(MockFactory.TEST_USERNAME_NO_RESULTS);
     onView(withId(android.support.design.R.id.snackbar_text)).check(
         matches(withText("No users found")));

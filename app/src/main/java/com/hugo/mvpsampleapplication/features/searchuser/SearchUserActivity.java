@@ -15,7 +15,7 @@ public class SearchUserActivity extends BaseActivity
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_search_user);
-    if (getFragmentManager().findFragmentById(R.id.content_activity_search_user) == null) {
+    if (savedInstanceState == null) {
       addFragment(R.id.content_activity_search_user, SearchUserFragment.newInstance());
     }
   }

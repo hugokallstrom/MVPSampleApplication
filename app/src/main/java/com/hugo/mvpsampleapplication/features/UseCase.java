@@ -6,8 +6,6 @@ import com.hugo.mvpsampleapplication.utils.ThreadExecutor;
 import rx.Observable;
 import rx.Subscriber;
 import rx.Subscription;
-import rx.android.schedulers.AndroidSchedulers;
-import rx.schedulers.Schedulers;
 import rx.subscriptions.Subscriptions;
 
 public abstract class UseCase {

@@ -1,8 +1,5 @@
 package com.hugo.mvpsampleapplication.features.searchuser;
 
-import android.content.Context;
-
-import com.hugo.mvpsampleapplication.app.MVPApplication;
 import com.hugo.mvpsampleapplication.features.UseCase;
 import com.hugo.mvpsampleapplication.model.network.GitHubService;
 
